@@ -1,0 +1,22 @@
+img /*Selecionando por nome do elemento*/
+{
+    width: 600px;
+}
+#titulo /*Selecionando Id*/
+{
+    color: green;
+}
+.texto /*Selecionando classe*/
+{
+    color: red;
+}
+
+#titulo, .texto /*Selecinando varios elementos de vez*/
+{
+    font: 26px;
+}
+
+ol li /*Selecionando um elemento dentro de outro*/
+{ 
+    color: pink;
+}
