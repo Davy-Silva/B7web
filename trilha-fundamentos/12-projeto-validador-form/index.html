@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Validador de Formulário</title>
+</head>
+<body>
+
+    <section class="tela">
+        <div class="left-tela"></div>
+
+        <main class="right-tela">
+            <form action="#" autocomplete="on" class="b7validator">
+                <h2>Crie uma conta</h2>
+
+                <div>
+                    <label>
+                        Seu nome: <br>
+                        <input type="text" name="name" data-rules="required|min=2" id="name" autocomplete="name" autofocus maxlength="50">
+                    </label>
+                    
+                    <label>
+                        Seu e-mail: <br>
+                        <input type="text" name="email" data-rules="required|email" id="email" maxlength="50">
+                    </label>
+                    <label>
+                        Sua senha: <br>
+                        <input type="password" name="password" data-rules="required|min=6" id="password" maxlength="50">
+                    </label>
+                    <button type="submit">Cadastrar</button>
+                </div>
+
+                <p>Já tem uma conta? <a href="#">Faça o login</a></p>
+            </form>
+        </main>
+    </section>
+    
+</body>
+</html>

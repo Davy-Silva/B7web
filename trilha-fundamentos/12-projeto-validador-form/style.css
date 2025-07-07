@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.tela {
+    display: flex;
+
+    width: 80vw;
+    height: 80vh;
+    border-radius: 10px;
+    box-shadow: -4px 4px 15px rgba(0, 0, 0, 0.521);
+}
+
+.left-tela {
+    border-radius: 10px 0px 0px 10px;
+    flex: 1;
+    
+    background-image: url(images/original-6f3706e63b5ab8b51b95382b15b0dfe1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.right-tela {
+    border-radius: 0px 10px 10px 0px;
+    width: 400px;
+    padding: 60px 60px;
+    background-color: #DDD;
+}
+
+.right-tela form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
+    height: 100%;
+}
+.right-tela h2 {
+    font-size: 28px;
+}
+.right-tela div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+.right-tela label {
+    font-size: 18px;
+    width: 100%;
+}
+.right-tela input {
+    width: 100%;
+    padding: 8px 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+.right-tela button {
+    margin: 10px 0px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(100, 20, 20);
+    color: #FFF;
+    font-size: 18px;
+    
+}
+.right-tela button:hover {
+    background-color: rgb(141, 29, 29);
+    box-shadow: 0px 4px 5px black;
+    cursor: pointer;
+}
+.right-tela p {
+    color: rgb(70, 69, 69);
+}
+.right-tela a {
+    color: rgb(67, 51, 211);
+}
+
+
+.error {
+    font-size: 11px;
+    background-color: red;
+    color: white;
+    padding: 8px 4px 4px 4px;
+    margin-top: -4px;
+    border-radius: 0px 0px 5px 5px;
+}

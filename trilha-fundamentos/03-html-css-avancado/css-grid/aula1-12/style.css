@@ -1,0 +1,71 @@
+html, body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid; /* transforma em container de grade(linhas e coluna) */
+    grid-template-columns: repeat(4, 80px); /* "tamanho" das colunas */
+    grid-template-rows: repeat(auto-fill, 1fr); /* "tamanho" das linhas */
+    gap: 10px; /* Espaço entre linhas e colunas */
+}
+
+/* Tamnho em relação aos outros item(1fr 2fr - o segundo tem o dobro do tamanho) */
+
+.item {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item1 {
+    background-color: rgb(10, 10, 177);
+
+    grid-area: 1 / 1 / span 4 / span 1;
+    /* grid-area: faz o mesmo que os dois de baixo
+    1 - row-start
+    2 - column-start
+    3 - row-end
+    4 - column-end
+    */
+
+    grid-row: 1 / span 5; /* Faz o mesmo que os dois de baixo */
+    grid-column: 1 / span 2; /* span -> diminui 1, fica mais fácil a compreensão das linhas "imaginarias" */
+
+    grid-row-start: 1; /* Define onde começa o item entre as linhas */
+    grid-row-end: 5; /* Define onde termina o item entre as linhas */
+
+}
+
+.item11 {
+    background-color: rgb(10, 10, 177);
+
+    grid-column: 1 / 5; /* Faz o mesmo que os dois de baixo */
+
+    grid-column-start: 2; /* Define onde começa o item entre as colunas */
+    grid-column-end:5; /* Define onde termina o item entre as colunas */
+}
+
+
+
+
+
+
+
+
+
+
+
+.item:hover {
+    background-color: rgb(4, 4, 128);
+}

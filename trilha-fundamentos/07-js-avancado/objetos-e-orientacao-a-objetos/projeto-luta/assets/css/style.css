@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background-color: gray;
+}
+
+.fightarea {
+    display: flex;
+    gap: 20px;
+}
+
+#char, #monster {
+    flex: 1;
+}
+
+.lifebar {
+    height: 10px;
+    border: 1px solid black;
+}
+
+.lifebar .bar {
+    height: inherit;
+    background-color: red;
+}
+
+button {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 6px 20px;
+}
+
+.log {
+    border: 2px dotted black;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 30px;
+}
+.log li {
+    margin-bottom: 10px;
+}
+.log li:nth-child(even) {
+    color: rgb(39, 18, 20);
+}
