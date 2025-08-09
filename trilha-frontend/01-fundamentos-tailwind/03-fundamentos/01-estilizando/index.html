@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'azul-goiaba': '#77a0a9'
+                    }   
+                }
+            }
+        }
+    </script>
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Cores -->
+    <div class="bg-sky-600 size-[100px] rounded-lg "></div>
+
+    <!-- Bordas -->
+    <div class="text-red-700/10 bg-gray-200 border-2 border-red-600/40">Hello World</div>
+
+    <!-- Cores Personalizadas -->
+    <div class="bg-azul-goiaba">azul-goiaba</div>
+
+    <!-- Espaçamento e tamanhos -->
+    <div class="bg-azul-goiaba w-24 h-24">azul goiaba no quadrado</div>
+    <!-- 1/2 é igual a 50% -->
+    <div class="bg-azul-goiaba w-1/2 h-24">azul goiaba no retangulo</div>
+    <div class="bg-azul-goiaba h-24 max-w-lg">azul goiaba no retangulo grande</div>
+    <!-- Padding e margin -->
+    <div class="bg-azul-goiaba w-1/2 h-24 py-4 ml-4">azul goiaba no retangulo</div>
+    <!-- Border -->
+    <div class="bg-azul-goiaba rounded-xl border-2 border-red-600">azul goiaba no retangulo</div>
+
+    
+</body>
+</html>
